@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>Szelektorok</title>
+        <meta charset="utf-8">
+        <meta name="description" content="Tartalom leírása">
+        <meta name="keywords" content="szó1, szó2, szó3">
+        <style type="text/css">
+            html { font-family: sans-serif; font-size: 12pt; background-color: lightgray; }
+            body { width: 80%; margin: 0 auto }
+            h1, h2, h3, h4, h5, h6 { color: maroon; }
+            em { background-color: red; }
+            h2 + p > span em { background-color: steelblue; }
+            div:not(#container) {padding: 1em; }
+            div > p:last-child { font-style: italic;}
+            .emphasized { color: tomato; }
+            .emphasized ~ p {color: indianred; }
+            .emphasized em { font-weight: 900; }
+            #container {margin-top: 1em; }
+            #first, #second, #third { border: 1px solid }
+            #first { margin-bottom: 1em; }
+            #second { margin-bottom: 3em; }
+            #second > h2 { text-indent: 1.5em; }
+            #second > p { color: ivory; }
+            #third { background-color: snow; border-radius: 1em; }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="first">
+                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1> 
+            </div>
+            <div id="second">
+                <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                <p>Morbi eget venenatis diam. Ut interdum sed odio at interdum. <span><em>Integer</em> mollis <em>condimentum</em></span> Praesent ac lorem et augue malesuada tempor mollis ut velit. Praesent a velit at libero vehicula faucibus.</p> 
+                <p class="emphasized">Fusce sagittis massa justo, ac consectetur enim porttitor at. <span><em>Integer</em> mollis <em>condimentum</em></span> Mauris vel est malesuada, scelerisque est ut, venenatis lacus.</p> 
+                <p> Integer mollis condimentum euismod. Mauris vulputate sapien mauris, semper hendrerit massa aliquet vel. Aenean lacus augue, scelerisque eget nisl eget, volutpat posuere felis. Nullam sit amet molestie diam. Vestibulum non ipsum iaculis, ornare turpis eu, dapibus nunc. Pellentesque fermentum mi urna, quis maximus nisl efficitur id. Ut a nisl tortor</p>
+                <p>Ut vel odio vitae mauris faucibus tempor sit amet sit amet nisl. Phasellus consequat arcu sed ornare fringilla.</p>
+            </div>
+
+            <div id="third">
+                <h2>Aenean lacus augue, <em>scelerisque eget nisl eget</em>, volutpat posuere felis.</h2> 
+                <p>Nunc ullamcorper, nulla sit amet sagittis pretium, quam purus viverra nisl, a dapibus mauris risus at urna.</p> 
+                <p class="emphasized">Mauris purus metus, molestie consequat consectetur sit amet, lacinia ut velit.</p>
+                <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <span><em>Integer</em> mollis <em>condimentum</em></span> Vivamus luctus est quis orci porta viverra. Maecenas vitae enim dui. Ut scelerisque, massa et auctor commodo, tortor magna ultricies nunc, eget euismod lacus enim eget enim. Ut pharetra tellus quis convallis varius.</p> 
+            </div>
+        </div>
+    </body>

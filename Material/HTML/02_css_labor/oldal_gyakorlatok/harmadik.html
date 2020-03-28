@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <title>Macskás</title>
+    <meta charset="UTF-8">
+    <style>
+      #tarto {   
+        width:30%; 
+        background-color: 
+        bisque; padding: 0.5em;
+      }
+
+      #kep { 
+        height: 40px; width: 40px;   
+        padding: 0.5em; margin: 0.5em;
+        background-color: lightgray;  
+      }
+
+      #szoveg3 { 
+        clear: both;  /* mivel mindkét oldalon van float*/
+      }
+      
+      #szoveg1 { 
+        width: 60%; 
+        float : right; 
+      }
+
+      #szoveg2{ 
+        display: block; /*a span itt blokk-ként van megjelenítve */
+        width: 30%; height: 30% ;
+        float: right; 
+        background: olive; 
+        padding: 0.5em; 
+        margin: 1em;}
+
+      #kepkeret { 
+        float: left; 
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="tarto">
+
+      <p id="szoveg1">Donec mollis elementum eleifend. Ut dignissim aliquet tortor, in bibendum magna convallis et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean sit amet dolor eget est pulvinar adipiscing. Duis hendrerit non nisl sed laoreet. Mauris ornare euismod urna et dignissim. Pellentesque pulvinar volutpat libero, eget eleifend sapien. 
+      </p>
+
+      <p id="kepkeret"><img id="kep" src="macsek.jpg" alt="Macsek"></p>
+
+      <p id="szoveg3">
+      <span id="szoveg2">Lorem ipsum dolor sit amet, consectetur.</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sed nunc in eros pharetra consectetur a non nulla. Sed a cursus nisl. Morbi sit amet mi bibendum, mollis turpis blandit, hendrerit tellus. Nunc sollicitudin risus quis mi dapibus, nec ornare diam commodo. Nulla imperdiet facilisis rutrum. 
+      </p>
+
+
+    </div>
+  </body>
+</html>

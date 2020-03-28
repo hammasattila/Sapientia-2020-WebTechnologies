@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>RegExp Gyakorlat</title>
+        <meta charset="utf-8">
+        <meta name="description" content="JavaScript példák">
+        <script src="hungarian.stop.js" type="text/javascript"></script>
+        <script type="text/javascript">
+ 
+        
+        var mo = "Nyugodtan rohanunk a szakadékba is, ha sikerült valamivel eltakarnunk a szemünk elől";
+        var moa = "the rain in Spain stays mainly in the plain";
+        var s = "első második harmadik első";
+        var s1 = "alpha beta gamma";
+        var szo = "abrakadabra";
+        var szam = "1265";
+        var ip = "192.168.110.102";
+        var tel = "+40-435-234-112";
+        var url = "http://localhost"; // egyszerűsítve a gép nevet alkotó sztringeka következő
+          //karakterekből állhatnak: a-z  A-Z 0-9 - és egy név maximum 61 karakter
+          //az elválasztó a pont (.)
+        var url1 = "http://localhost/hu/kereses?q=alma"; //kereső webcím
+        var p = "<p>";
+        var p1 = '<p class="szines">';
+        var par = "<p>Szöveg szöveg szöveg</p>";
+        var par1 = '<p class="szines">Szöveg szöveg szüveg</p>';
+        var pp = "<p>Szöveg szöveg szöveg</p><p>Szöveg szöveg szöveg</p><p>Szöveg szöveg szöveg</p>";
+        var idszov = '"alma" és "szilva" és "cseresznye"';
+        
+        //egész szám
+        var reszam = /^\d+$/ ; // egy egész számot tesztel
+        var t1 = x=reszam.test(szam); //tesztel egy egész számot
+        //egy paragrafus tag 
+        var rep = /<p[^>]*>/i;
+        //angol szavak keresése
+        mm=moa.match(/[a-z]+/g);
+
+        
+        //megoldások
+        repara=/<p[^>]*>[^<]*<\/p>/i;
+
+         
+
+        </script>
+
+    </head>
+
+    <body>
+
+
+        <p>Konzolra ír</p>
+
+    </body>
+</html>

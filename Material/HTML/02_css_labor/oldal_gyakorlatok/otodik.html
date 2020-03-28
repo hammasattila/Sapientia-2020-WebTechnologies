@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <title>Oldal elrendezés lebegéssel</title>
+    <meta charset="utf-8">   
+    <style type="text/css">
+
+      div, p ,h3 { margin:0; padding: 0.5em; }
+
+      #t { width: 60% ;}
+
+      #d1 {
+        height: 30px;
+        background-color: bisque;
+      }
+
+      .kozep { line-height: 100%;
+        text-align: center;}
+
+      #d2 {
+        background-color: lightgray;
+        width: 30%;
+      }
+
+      #d3 {
+        background-color: DarkSeaGreen ;
+        width: 55%;
+        position : relative;
+        height: 230px;
+        margin-right: auto;
+        margin-left: auto;
+        bottom: -1em;
+
+      }
+
+      img { height: 95px; width: 100px;
+        float: right; 
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <div id="t">
+      <img src="bagoly.jpg" alt="Székely bagoly">
+
+      <div id="d2">
+        <h3>Cím</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non nisl vestibulum, venenatis erat in, fermentum augue. </p>
+
+      </div>
+
+      <div id="d3">
+
+        <h3>Cím</h3>
+        <p>Sed a varius nibh. Nullam et tempor leo. Cras dignissim risus id ex dapibus luctus. Sed a varius nibh.</p>
+
+      </div>
+
+      <div id="d1">
+        <p class="kozep">Szöveg</p>
+      </div>
+
+
+    </div>
+  </body>
+</html>

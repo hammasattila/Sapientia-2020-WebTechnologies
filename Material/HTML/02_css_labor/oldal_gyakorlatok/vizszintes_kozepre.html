@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <title>Macska középen</title>
+    <meta charset="UTF-8">
+    <style>
+      #tarto {   
+        width:30%; 
+        background-color: bisque; 
+        padding-top: 0.5em;
+      }
+
+      .oszlop {
+          width: 30%;
+          height: 400px;
+          margin-left: 2.5%;
+          float: left;
+          box-sizing: border-box;
+          background-color: lightgray; 
+          
+      }
+      
+      .kozep {
+         display: inline-table; /* inline tablázat */
+         text-align: center;   /*a tartalmat vízszintesen középre */
+      }
+      
+      span {     
+          display: table-cell;  /* táblázat cellaként jelenik meg */
+          vertical-align: middle;
+      }
+       
+      #clr {clear: left;} 
+
+    </style>
+  </head>
+  <body>
+    <div id="tarto">
+
+       <div class="oszlop">
+           Tartalom
+       </div>
+        
+        <div class="oszlop kozep">
+            <span>
+                <img src="macsek.jpg" height="60" width="60">
+            </span>
+       </div>
+        
+        
+        <div class="oszlop">
+           Tartalom
+       </div>
+
+        <div id="clr"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+
+            
+            .container { 
+                display: flex;
+/*                 flex-direction: row; */
+                flex-direction: column;
+/*                 justify-content: space-between ; */
+                
+/*                 flex-wrap: wrap; */
+                flex-wrap: nowrap;
+                border: 1px solid red;
+            }
+            
+            .container div {
+               border: 1px solid black;
+            }
+            .elso {
+                background-color: lightgray;
+             }
+             
+            .masodik {
+                background-color: bisque;
+                
+            }
+
+            .harmadik {
+                background-color: lightcyan;
+               
+            }
+            
+            .item {
+                width:120px; 
+            }
+
+        

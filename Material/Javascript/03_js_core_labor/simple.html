@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>JavaScript meghívása a böngészőben</title>
+    <meta charset="utf-8">
+    <meta name="description" content="JavaScript példák">
+
+    <!-- script elemben deklarált kód -->
+    <script type="text/javascript"> 
+
+        //egy változó
+        var s = "Helló";
+
+        //egy függvény
+        //csak akkor fut le ha meghívjuk
+        function teszt(s1) {
+            alert(s1);
+        }
+
+        var sum;
+        var x = 1; 
+        var y= 2;
+        sum = y  + x;
+        //konzolra ír
+        console.log(sum);
+
+    </script>
+
+    <style type="text/css">
+    </style>
+
+</head>
+
+<body>
+
+    <!-- esemenykezelővel való hívás -->
+    <p onclick="teszt(s);">Kattintásra meghívható a függvény kódja</p>
+
+</body>
+
+</html>

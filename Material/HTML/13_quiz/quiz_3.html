@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="utf-8">
+    <title>CSS teszt</title>
+    <style type="text/css">
+        p .a { color: red;
+        }
+        em { black;
+        }
+        #x em { color: yellow;
+        }
+        #x .a { color: green;
+        }
+        #p .a { color: green;
+        }
+        .b #x #para { color: cyan;
+        }
+    </style>
+</head>
+<body>
+    <!-- milyen színű az Első, Második és Harmadik szó? -->
+    <div id="x">
+        <p id="para" class="a">Első</p>
+        <p class="a">
+            <em>Második</em>
+        </p>
+        <p class="a">
+            <em>
+                <em>Harmadik</em>
+            </em>
+        </p>
+    </div>
+</body>
+
+</html>
