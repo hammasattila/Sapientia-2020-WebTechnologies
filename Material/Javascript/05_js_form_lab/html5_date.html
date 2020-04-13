@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+  <title>HTML 5 input elemek</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="utils.js"></script>
+
+  <script>
+
+    //beírja a kezdő dátumot az input elembe
+    window.onload = function () {
+      var d = new Date();
+      var Y = d.getFullYear();
+      var M = d.getUTCMonth() + 1;
+      var M = M < 10 ? "0" + M : M;
+      var D = d.getUTCDay();
+      var D = D < 10 ? "0" + D : D;
+      var s = Y + '-' + M + "-" + D;
+      $("datum").value = s;
+      $("datum").min = s;
+    }
+
+  </script>
+</head>
+
+<body>
+
+  <form name="elso" action="http://localhost/~lszabo/internet/action.php" method="POST">
+    <fieldset>
+      <legend>Esemény</legend>
+      <label for="datum">
+        Az esemény dátuma:
+      </label>
+      <input type="date" name="datum" id="datum" min="2018-03-20" max="2019-12-31" value="" pattern="20\d{2}-\d{2}-\d{2}">
+      <span>Az esemény az év végéig kell beütemezni</span>
+    </fieldset>
+
+    <input type="submit" name="Elküld" value="ok">
+
+  </form>
+  <p>Megjegyzés: a date típus jelenleg is csak néhány böngészőben működik</p>
+
+
+</body>

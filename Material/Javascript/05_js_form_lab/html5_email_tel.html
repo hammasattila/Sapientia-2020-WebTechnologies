@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+
+    <title>HTML 5 input elemek</title>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="utils.js"></script>
+    <script>
+    </script>
+    <style>
+    form * {
+      margin: 0.3em;
+    }
+    </style>
+  </head>
+
+  <body>
+
+    <form name="elso" action="http://localhost/~lszabo/internet/action.php" method="POST">
+
+      <label>
+        <span>E-mail cím:</span>
+        <input type="email" name="email" id="email" required autofocus 
+               autocomplete="off"
+               placeholder="nev@pelda.ro">
+        <label>
+          <legend>
+            <span>Telefonszám:</span>
+            <input type="tel" name="tel" id="tel" required placeholder="999999999" pattern="\d{9}">
+          </legend>
+          <input type="submit" name="ok" value="ok">
+
+          </form>
+
+
+          </body>
+

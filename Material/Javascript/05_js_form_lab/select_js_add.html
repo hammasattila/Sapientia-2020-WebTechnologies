@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>Választó lista - select</title>
+  <meta charset="utf-8">
+
+  <script src="utils.js"></script>
+  <script src="./select_js_add.js"></script>
+
+  <style type="text/css">
+    #error {
+      color: red;
+    }
+
+    #kivalasztas {
+      font-style: italic;
+      color: gray;
+    }
+
+    #add span {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p id="error">&nbsp;</p>
+
+  <form id="tesztform" action="http://localhost/~lszabo/internet/action.php" method="POST" enctype="multipart/form-data">
+    <label for="szinek">Színek:
+      <select id="szinek" name="szinek">
+        <option value="választ" selected>Válassz egy színt!</option>
+        <option value="red">Piros</option>
+        <option value="blue">Kék</option>
+        <option value="green">Zöld</option>
+      </select>
+    </label>
+
+    <input class="gomb" type="submit" name="go" value="Küldd">
+    <input class="gomb" type="reset" name="reset" value="Törlés">
+
+  </form>
+
+  <form id="add">
+
+    <span><b>Új opció</b></span>
+    <label>Value:
+      <input type="text" name="svalue" value="">
+    </label>
+    <label>Text:
+      <input type="text" name="stext" value="">
+    </label>
+    <input type="button" name="ok" value="Hozzáad">
+
+    <span><b>Törlés</b></span>
+    <label>Index:
+      <input type="text" name="index" value="">
+    </label>
+    <input type="button" name="del" value="Töröl">
+  </form>
+
+  <p id="kivalasztas"></p>
+</body>
+
+</html>

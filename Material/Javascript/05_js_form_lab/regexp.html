@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <title>JS példák</title>
+  <meta charset="utf-8">
+  <meta name="description" content="JavaScript példák">
+
+  <script src="utils.js"></script>
+  <script src="./regexp.js"></script>
+
+  <style>
+  input { display: block;}
+  </style>
+
+</head>
+
+<body>
+  <p>Illesztés a RegExp osztály függvényeivel. 
+    A reguláris kifejezést // közt kell megadni g vagy i módosítókkal</p>
+  <form id="teszt">
+    <label for="sztring">Sztring:
+      <input type="text" name="sztring" id="sztring" value="" size="50">
+    </label>
+    <label for="sztring">Regex:&nbsp;
+      <input type="text" name="regex" id="regex" value="" size="50">
+    </label>
+    <input type="submit" name="OK" value="OK">
+  </form>
+
+  <p id="res"></p>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Űrlap példák</title>
+  <meta charset="utf-8">
+
+  <script src="./utils.js"></script>
+  <script src="./form_input.js"></script>
+
+</head>
+
+<body>
+
+  <form id="elso" action="http://localhost/~lszabo/internet/action.php" method="POST" onsubmit='return checkInput(this)'>
+
+    <label for="in1">Bevitel:</label>
+    <input id="in1" type="text" name="szoveg" value="" size="10" maxlength="20" onfocus="onFocus(this, event)" onblur="onBlur(this)"
+      placeholder="Kitöltendő">
+
+    <br>
+    <input type="reset" name="Törlés" value="Törlés">
+    <input type="submit" name="Mehet" value="Ok">
+
+  </form>
+
+</body>
+
+</html>

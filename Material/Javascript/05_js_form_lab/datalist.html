@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+
+  <title>HTML 5 input elemek</title>
+  <meta charset="utf-8">
+
+  <script src="utils.js"></script>
+  <script src="./datalist.js"></script>
+
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <form id="elso" name="elso" action="http://localhost/~lszabo/internet/action.php" method="POST">
+
+    <label for="szak">
+      Szak:
+    </label>
+    <input type="text" name="szak" id="szak" value="" list="szaklista" placeholder="A szak neve">
+
+    <datalist id="szaklista">
+      <option>Automatika</option>
+      <option>Informatika</option>
+      <option>Számítástechnika</option>
+      <option>Távközlés</option>
+    </datalist>
+
+    <span>Válassza ki a szakot</span>
+
+    <input type="submit" name="Elküld" value="ok">
+
+
+
+  </form>
+
+  <p id="error" class="error"></p>
+
+
+</body>

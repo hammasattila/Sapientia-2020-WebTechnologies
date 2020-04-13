@@ -1,0 +1,3 @@
+ validate.js forrás, dokumentáció:
+
+ http://rickharrison.github.io/validate.js/
