@@ -1,0 +1,62 @@
+<html>
+
+<head>
+  <title>HTML 5 input elemek</title>
+  <meta charset="utf-8">
+  <script type="text/javascript" src="utils.js"></script>
+  <script type="text/javascript" src="3.js"></script>
+</head>
+
+<body>
+  <form id="form" action="https://ms.sapientia.ro/~lszabo/internet/action.php" method="POST">
+    <fieldset>
+      <legend> Személyes adatok </legend>
+
+      <label for="lastName"> Vezeték név: </label>
+      <input id="lastName" name="lastName" type="text" placeholder="Rákoczi" pattern="^([A-ZÁÉÍÓÖŐÚÜ][a-záéíóöőúüű]+\s*)$" required>
+      <br><br>
+      <label for="firstName"> Kereszt név: </label>
+      <input id="firstname" name="firstName" type="text" placeholder="Péter Jozsef" pattern="^([A-ZÁÉÍÓÖŐÚÜ][a-záéíóöőúüű]+\s*){1,2}$" required>
+      <br><br>
+      <label for="age"> Életkor </label>
+      <input id="age" name="age" type="number" placeholder="##" min="18" max="99" required>
+      <br><br>
+      <label for="county"> Megye: </label>
+      <select id="county" name="county" required>
+        <option value="bv">Brassó</option>
+        <option value="hr">Hargita</option>
+        <option value="ms">Maros</option>
+        <option value="cv">Kovászna</option>
+      </select>
+      <br><br>
+      <label for="postalCode"> Postai irányítószám: </label>
+      <input id="postalCode" name="postalCode" type="text" placeholder="######" pattern="^\d{6}$" required>
+      <br><br>
+      <label for="telephone"> Telefón: </label>
+      <input id="telephone" name="telephone" type="text" placeholder="(+4)0#########" pattern="^((\+\d{1})|(\d{3}))??\d{10}$" required>
+      <br><br>
+      <label> Nem: </label>
+      <input name="gender" type="radio" value="male" checked> Férfi
+      <input name="gender" type="radio" value="female"> Nő
+      <br><br>
+      <fieldset>
+        <legend> Saját használatú gépkocsi adatai </legend>
+        <label for="haveAuto"></label> Van gépkocsim:
+        <input id="haveAuto" name="haveAuto" type="checkbox" checked>
+        <br>
+        <label for="autoId"> Autó rendszáma: </label>
+        <input id="autoId" name="autoId" type="text" placeholder="$$ ## $$$" pattern="^[a-zA-Z]{2}\s*\d{2}\s*[a-zA-Z]{3}$">
+      </fieldset>
+      <br><br>
+      <label> Elfogadom a honlap használatának feltételei: </label>
+      <input id="policy" name="policy" type="checkbox" required>
+    </fieldset>
+
+    <p id="hiba" style="color: red;">&nbsp;</p>
+
+    <input type="reset" name="reset" value="Törlés">
+    <input type="button" name="send" value="Elküld">
+  </form>
+</body>
+
+</html>
